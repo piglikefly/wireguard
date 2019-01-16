@@ -36,7 +36,7 @@ config_mail(){
 config_keyword(){
     iptables -A FORWARD -m string --string "netflix.com" --algo bm -j DROP
     iptables -A FORWARD -m string --string "tumblr.com" --algo bm -j DROP
-    iptables -A FORWARD -m string --string "facebook.com.com" --algo bm -j DROP
+    iptables -A FORWARD -m string --string "facebook.com" --algo bm -j DROP
     iptables -A FORWARD -m string --string "instagram.com" --algo bm -j DROP
     iptables -A FORWARD -m string --string "pixiv.net" --algo bm -j DROP
     iptables -A FORWARD -m string --string "whatsapp.com" --algo bm -j DROP
